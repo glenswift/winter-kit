@@ -1,0 +1,62 @@
+.btn {
+	margin: 10px;
+	width: 115px;
+	font-size: 13px;
+	background-color: $grey;
+	a {
+		position: relative;
+		display: block;
+		line-height: 45px;
+		height: 45px;
+		width: 100%;
+		color: $darkgrey;
+		padding-left: 50px;
+		&:before {
+			position: absolute;
+		}
+		&.inbox {
+			&:before {
+				content:"\0020";
+				width: 18px;
+				height: 12px;
+				top: 16px;
+				left: 19px;
+				background-image: url(/images/mail-dgrey.png);
+				background-size: cover;	
+			}
+		}
+		&.starred {
+			&:before {
+				content:"\0020";
+				width: 21px;
+				height: 20px;
+				top: 12px;
+				left: 16px;
+				background-image: url(/images/favorite.png);
+				background-size: cover;	
+			}
+		}
+		&.flagged {
+			&:before {
+				content:"\0020";
+				width: 15px;
+				height: 20px;
+				top: 12px;
+				left: 19px;
+				background-image: url(/images/bookmark-dgrey.png);
+				background-size: cover;	
+			}
+		}
+		&.trash {
+			&:before {
+				content:"\0020";
+				width: 20px;
+				height: 19px;
+				top: 12px;
+				left: 17px;
+				background-image: url(/images/delete-dgrey.png);
+				background-size: cover;	
+			}
+		}
+	}
+}

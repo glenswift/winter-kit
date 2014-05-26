@@ -1,0 +1,52 @@
+.subscribe {
+	box-sizing: border-box;
+	padding: 20px;
+	width: 275px;
+	background-color: $orange;
+	p {
+		padding-bottom: 15px;
+		color: #fff;
+		text-align: center;
+		font-size: 15px;
+	}
+	.subscribe-wrap {
+		position: relative;
+		input {
+			box-sizing: border-box;
+			margin-bottom: 12px;
+			padding-left: 60px;
+			padding-right: 10px;
+			width: 100%;
+			height: 34px;
+			border: none;
+			background-color: $grey;
+			color: $darkgrey;
+		}
+		&:before {
+			position: absolute;
+			content:"\0020";
+			display: block;
+			width: 18px;
+			height: 12px;
+			top: 11px;
+			left: 20px;
+			background-image: url(/images/mail-dgrey.png);
+			background-size: cover;	
+		}
+	}
+
+	.subscribe-btn {
+		margin: 0 25px;
+		button {
+			display: block;
+			width: 100%;
+			height: 34px;
+			border: none;
+			border-radius: 0;
+			background-color: $black;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	}
+}

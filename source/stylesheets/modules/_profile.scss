@@ -1,0 +1,116 @@
+.profile {
+	@extend .clearfix;
+	width: 260px;
+	background-color: $orange;
+	.profile-name {
+		@extend .clearfix;
+		padding: 0 20px;
+		p {
+			margin-top: 40px;
+			font-size: 17px;
+			line-height: 20px;
+			color: #fff;
+		}
+		b {
+			font-size: 15px;
+			line-height: 20px;
+			color: $black;
+		}
+		img {
+			margin-top: 25px;
+			margin-right: 15px;
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			border: 5px solid #fff;
+			float: left;
+		}
+		span {
+			// float: left;
+		}
+	}
+	.profile-info {
+		padding: 20px;
+		float: left;
+		font-size: 13px;
+		color: #fff;
+	}
+	.profile-photo {
+		height: 85px;
+		width: 100%;
+		background-image: url(/images/profile-photo.png);
+		background-position: 50%;
+		background-size: cover;
+	}
+	.profile-stat {
+		float: left;
+		height: 60px;
+		width: 100%;
+		background-color: $black;
+		color: #fff;
+		font-size: 0;
+		line-height: 0;
+		li {
+			display: inline-block;
+			text-align: center;
+			width: (100% / 3);
+			font-size: 13px;
+			line-height: 60px;
+			&.time {
+				position: relative;
+				&:before {
+					position: absolute;
+					content:"\0020";
+					display: block;
+					width: 20px;
+					height: 20px;
+					top: 18px;
+					left: 20px;
+					background-image: url(/images/time-orange.png);
+					background-size: cover;	
+				}
+			}
+			&.user {
+				position: relative;
+				&:before {
+					position: absolute;
+					content:"\0020";
+					display: block;
+					width: 19px;
+					height: 20px;
+					top: 18px;
+					left: 20px;
+					background-image: url(/images/user-orange.png);
+					background-size: cover;	
+				}
+			}
+			&.comment {
+				position: relative;
+				&:before {
+					position: absolute;
+					content:"\0020";
+					display: block;
+					width: 23px;
+					height: 20px;
+					top: 18px;
+					left: 20px;
+					background-image: url(/images/message-orange.png);
+					background-size: cover;	
+				}
+			}
+			> div {
+				padding-left: 35px;
+			}
+		}
+
+	}
+	.profile-btn {
+		float: left;
+		line-height: 48px;
+		width: 100%;
+		font-size: 13px;
+		height: 48px;
+		text-align: center;
+		color: #fff;
+	}
+}

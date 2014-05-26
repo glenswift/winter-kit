@@ -1,0 +1,28 @@
+.search {
+	.searchwrap {
+		position: relative;
+		width: 235px;
+		border: 14px solid $darkgrey;
+		box-sizing: border-box;
+		input {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 0 40px 0 20px;
+			height: 39px;
+			color: $darkgrey;
+			font-size: 16px;
+			border:none;
+		}
+		&:after {
+			content: '\0020';
+			position: absolute;
+			width: 19px;
+			height: 20px;
+			background-image: url(/images/search.png);
+			background-size: cover;
+			right: 15px;
+			top: 10px;
+		}
+	}
+}
+	

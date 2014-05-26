@@ -1,0 +1,57 @@
+.player {
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+	min-height: 95px;
+	width: 275px;
+	background-color: $grey;
+
+	.player-artist {
+		font-size: 22px;
+		color: $darkgrey;
+	}
+	.player-title,
+	.player-time {
+		font-size: 11px;
+		color: $darkgrey;
+	}
+	.player-time {
+		float: left;
+	}
+	.player-control {
+		line-height: 10px;
+		position: absolute;
+		right: 95px + 25px;
+		bottom: 10px;
+		left: 10px;
+		.prev-btn,
+		.next-btn {
+			width: 20px;
+			height: 10px;
+			float: right;
+			background-size: cover;
+			background-position: 0 0;
+			cursor: pointer;
+		}
+		.next-btn {
+			margin-left: 28px;
+			background-image: url(/images/next.png);
+		}
+		.prev-btn {
+			background-image: url(/images/prev.png);
+		}
+	}
+	.player-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 95px;
+		min-height: 95px;
+		background-color: $black;
+		background-image: url(/images/play-icon.png);
+		background-position: 15px 15px;
+		background-size: 65px 65px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}

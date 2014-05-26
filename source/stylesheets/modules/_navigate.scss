@@ -1,0 +1,45 @@
+.navigate {
+	position: relative;
+	height: 150px;
+	width: 275px;
+	background-image: url(/images/oregon-maps.png);
+	background-position: 50%;
+	background-size: cover;
+	.nav-location {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 15px;
+		left: 90px;
+		background-image: url(/images/location.png);
+		background-size: cover;
+		cursor: pointer;
+	}
+	.nav-line {
+		line-height: 35px;
+		height: 35px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		.nav-name {
+			box-sizing: border-box;
+			margin-right: 70px;
+			background-color: $orange;
+			color: #fff;
+			padding-left: 15px;
+			font-size: 13px;
+		}
+		span {
+			cursor: pointer;
+			box-sizing: border-box;
+			text-align: center;
+			border-left: 1px solid $orange;
+			width: 35px;
+			height: 35px;
+			display: block;
+			color: $orange;
+			background-color: rgba(255,255,255,0.7);
+			float: right;
+		}
+	}
+}

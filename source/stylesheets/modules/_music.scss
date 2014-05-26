@@ -1,0 +1,112 @@
+.music {
+	width: 275px;
+	background-color: $grey;
+	.artist-photo {
+		width: 85px;
+		height: 85px;
+		float: left;
+		background-image: url(/images/artist.png);
+		background-size: contain;
+	}
+
+	.song {
+		height: 85px - 30px /*TWO PADDINGS*/;
+		padding: 15px;
+		margin-left: 85px;
+		background-color: $orange;
+		font-size: 13px;
+		position: relative;
+		overflow: hidden;
+	}
+		.song-artist,
+		.song-time {
+			color: #fff;
+		}
+		.song-artist {
+			float: left;
+		}
+		.song-time {
+			float: right;
+			padding-right: 20px;
+			position: relative;
+			&:after {
+				position: absolute;
+				content:"\0020";
+				display: block;
+				width: 12px;
+				top: 1px;
+				right: 0;
+				height: 11px;
+				background-image: url(/images/sound.png);
+				background-size: cover;	
+			}
+		}
+
+		.song-sound {
+
+		}
+
+		.song-title {
+			clear: both;
+			text-align: center;
+			line-height: 45px;
+
+			span {
+				display: inline-block;
+				color: $black;
+				vertical-align: middle;
+				line-height: 15px;
+			}
+		}
+		.song-track {
+			border-top: 1px solid #fff;
+
+			div {
+				position: relative;
+			}
+			b {
+				position: absolute;
+				top: -5px;
+				right: -5px;
+				width: 10px;
+				height: 10px;
+				border-radius: 6px;
+				background: #fff;
+			}
+		}
+
+	.songs {
+		padding: 28px 28px 28px 45px;
+		li {
+			position: relative;
+			margin-bottom: 18px;
+			b,span {
+				color: $darkgrey;
+				font-size: 11px;
+			}
+			span {
+				display: block;
+				float: right;
+				line-height: 16px;
+			}
+			a {
+				&:before {
+					position: absolute;
+					content:"\0020";
+					display: block;
+					width: 14px;
+					height: 14px;
+					top: 1px;
+					left: -30px;
+					background-image: url(/images/play.png);
+					background-size: cover;	
+				}
+				&._stop {
+					&:before {
+					background-image: url(/images/stop.png);
+					}
+				}
+			}
+		}
+	}
+}
